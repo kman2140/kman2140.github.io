@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Full Screen Padlet Embed</title>
+    <style>
+        html, body {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+        }
+        .padlet-embed {
+            height: 100vh;
+            width: 100vw;
+            overflow: hidden;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: #F4F4F4;
+        }
+        iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+        .padlet-footer {
+            display: flex;
+            justify-content: flex-end;
+            position: absolute;
+            bottom: 10px;
+            right: 10px;
+            z-index: 10;
+        }
+    </style>
+</head>
+<body>
+    <div class="padlet-embed">
+        <iframe src="https://padlet.com/embed/x9tpmcmow0xqamsx" frameborder="0" allow="camera;microphone;geolocation"></iframe>
+        <div class="padlet-footer">
+            <a href="https://padlet.com?ref=embed" target="_blank">
+                <img src="https://padlet.net/embeds/made_with_padlet_2022.png" width="114" height="28" alt="Made with Padlet">
+            </a>
+        </div>
+    </div>
+</body>
+</html>
